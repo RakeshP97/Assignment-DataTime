@@ -23,7 +23,7 @@ class DateTimeAppApplicationTests {
 
 		mongoTemplate.save(objectToSave, "collection");
 
-//addding comments111
+		//addding comments
 		assertThat(mongoTemplate.findAll(DBObject.class, "collection")).extracting("key").containsOnly("value");
 	}
 }
